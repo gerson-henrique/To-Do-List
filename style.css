@@ -2,10 +2,11 @@
     display: inline-block;
  width: 100px;
   height: 100px;
-  padding-top: 10px
+  padding-top: 10px;
   border: solid black 1px;
 
 }
+
 
 .pixel{
     display: inline-block;
@@ -19,4 +20,12 @@
     background: blue;
     
     line-height:0%;
+}
+
+.selected {
+     background-color: rgb(128, 128, 128) ;
+}
+
+.completed {
+    text-decoration:line-through
 }
