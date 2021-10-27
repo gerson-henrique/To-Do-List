@@ -3,7 +3,7 @@ let lista = document.getElementById('lista-tarefas')
 let btnC = document.getElementById('criar-tarefa')
 let btnA = document.getElementById('apaga-tudo')
 let btnL = document.getElementById('remover-finalizados')
-let btnS = document.getElementById('removere-selecionado') 
+let btnS = document.getElementById('remover-selecionado') 
 
 //Criando atalhos ^ 
 
@@ -78,12 +78,14 @@ function apagaLista() {
 //Apaga a lista^ 
 
 function apagaFinalizados() {
-  console.log('rs')
+  
   let Arrfinalizados = document.getElementsByClassName("completed")
 
-  for (i = 0; i < Arrfinalizados.length; i += 1) {
-    finalizados = Arrfinalizados[i]
+  for (i = Arrfinalizados.length-1; i >=0; i -= 1) {
+  let finalizados = Arrfinalizados[i]
+    console.log('teste',finalizados)
     lista.removeChild(finalizados)
+    
   }
 }
 
