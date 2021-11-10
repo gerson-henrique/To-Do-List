@@ -80,7 +80,7 @@ function changeUp() {
     return;
   }
   const selectedFather = selecionado.parentNode;
-  if (selecionado == selectedFather.children[0]) {
+  if (selecionado === selectedFather.children[0]) {
     return;
   }
   selectedFather.insertBefore(selecionado, selecionado.previousElementSibling);
